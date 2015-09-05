@@ -805,8 +805,8 @@ class TestMaximum(_FilterInvalids):
             x = np.array(float('nan'), np.object)
             y = 1.0
             z = np.array(float('nan'), np.object)
-            assert_(np.maximum(x, y) == 1.0)
-            assert_(np.maximum(z, y) == 1.0)
+            assert_(np.fmax(x, y) == 1.0)
+            assert_(np.fmax(z, y) == 1.0)
 
     def test_complex_nans(self):
         nan = np.nan
@@ -863,8 +863,8 @@ class TestMinimum(_FilterInvalids):
             x = np.array(float('nan'), np.object)
             y = 1.0
             z = np.array(float('nan'), np.object)
-            assert_(np.minimum(x, y) == 1.0)
-            assert_(np.minimum(z, y) == 1.0)
+            assert_(np.fmin(x, y) == 1.0)
+            assert_(np.fmin(z, y) == 1.0)
 
     def test_complex_nans(self):
         nan = np.nan

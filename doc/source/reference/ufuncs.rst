@@ -508,6 +508,7 @@ Math operations
     mod
     fmod
     absolute
+    fabs
     rint
     sign
     conj
@@ -556,6 +557,8 @@ The ratio of degrees to radians is :math:`180^{\circ}/\pi.`
     arcsinh
     arccosh
     arctanh
+    degrees
+    radians
     deg2rad
     rad2deg
 
