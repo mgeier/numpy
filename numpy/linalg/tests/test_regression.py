@@ -106,8 +106,15 @@ class TestRegression(TestCase):
         assert_array_equal(norm, [0, 1])
         self.assertEqual(norm.dtype, np.dtype('float64'))
 
+        # OK:
         self.assertRaises(ValueError, linalg.norm, testvector, ord='fro')
+        # OK:
         self.assertRaises(ValueError, linalg.norm, testvector, ord='nuc')
+
+        norm = linalg.norm(testvector, ord=np.inf)
+        assert_array_equal(norm, [0, 1])
+        self.assertEqual(norm.dtype, np.dtype('float64'))
+
         self.assertRaises(ValueError, linalg.norm, testvector, ord=np.inf)
         self.assertRaises(ValueError, linalg.norm, testvector, ord=-np.inf)
         self.assertRaises((AttributeError, DeprecationWarning),
