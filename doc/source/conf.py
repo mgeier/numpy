@@ -60,7 +60,7 @@ def replace_scalar_type_names():
     del sys.modules['numpy.core._add_newdocs_scalars']
     import numpy.core._add_newdocs_scalars
 
-replace_scalar_type_names()
+#replace_scalar_type_names()
 
 # -----------------------------------------------------------------------------
 # General configuration
@@ -158,14 +158,14 @@ sys.modules['numpy.testing.dec'] = numpy.testing.dec
 # HTML output
 # -----------------------------------------------------------------------------
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'insipid'
 
 html_logo = '_static/numpylogo.svg'
 
-html_theme_options = {
-  "github_url": "https://github.com/numpy/numpy",
-  "twitter_url": "https://twitter.com/numpy_team",
-}
+#html_theme_options = {
+#  "github_url": "https://github.com/numpy/numpy",
+#  "twitter_url": "https://twitter.com/numpy_team",
+#}
 
 
 html_additional_pages = {
