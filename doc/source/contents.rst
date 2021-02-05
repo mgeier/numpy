@@ -5,7 +5,7 @@ NumPy Documentation
 ###################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    User Guide <user/index>
    API reference <reference/index>
