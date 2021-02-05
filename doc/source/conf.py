@@ -60,7 +60,7 @@ def replace_scalar_type_names():
     del sys.modules['numpy.core._add_newdocs_scalars']
     import numpy.core._add_newdocs_scalars
 
-#replace_scalar_type_names()
+replace_scalar_type_names()
 
 # -----------------------------------------------------------------------------
 # General configuration
